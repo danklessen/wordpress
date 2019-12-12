@@ -42,7 +42,7 @@ function setActiveTab(pageId) {
 
 /*
 Fetches pages json data from my headless cms */
-fetch("http://localhost:8888/wordpress/wp-json/wp/v2/pages?_embed")
+fetch("http://danklesse.dk/wp-json/wp/v2/pages?_embed")
   .then(function(response) {
     return response.json();
   })
