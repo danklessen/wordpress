@@ -1,0 +1,416 @@
+/*---GLOBAL---*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+
+
+}
+
+/* ---------- root variables ---------- */
+:root {
+  --blue: #028BFF;
+  --light-blue: #3FD1E7;
+  --light-grey: #f1f1f4;
+  --text-color-light: #eee;
+  --text-color-dark: #444;
+}
+
+/* ---------- general styling ---------- */
+html {
+  color: var(--text-color-dark);
+
+    font-family: 'Rajdhani', sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  font-weight: lighter;
+}
+
+body {
+  margin: 0;
+}
+
+/* ---------- logo styling ---------- */
+.logo {
+  max-width: 150px;
+	position: fixed;
+	top: -20px;
+	left: 35%;
+}
+
+.row {
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: #000;
+
+}
+.row pre {
+	text-align: center;
+	
+	
+}
+.row h4 {
+	font-size: 18px;
+	color: #028BFF;
+	padding-top: 70px
+	
+}
+.row2 h4 {
+	text-transform: uppercase;
+	
+}
+
+.row2 {
+	background: linear-gradient(18deg, rgba(63,209,231,1) 4%, rgba(2,139,255,0.8505602924763656) 57%, rgba(63,209,231,1) 96%);
+}
+
+.row h5 {
+	text-align: center;
+	color: #fff;
+	position: relative;
+	bottom: 62px;
+	font-size: 1.6em;
+	margin-top: 0px;
+
+}
+
+.row a {
+	font-size: 12px;
+	text-decoration: none;
+	color: var(--blue);
+	margin-bottom: 50px;
+}
+
+
+.row p{
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+	padding-bottom: 50px;
+	color: #eee;
+	
+	
+
+}
+
+#headerbox h1 {
+  font-size: 2.1em;
+  font-weight: bold;
+	font-family: 'Rajdhani', sans-serif;
+	position: relative;
+	top: 100px;
+	color: #eee;
+	max-height: 10px;
+	text-transform: uppercase;
+
+}
+
+#headerbox h2 {
+  font-size: 28px;
+  font-weight: lighter;
+	font-family: 'Rajdhani', sans-serif;
+	position: relative;
+	top: 130px;
+	color: #eee;
+	letter-spacing: 3px;
+}
+
+#headerbox p {
+	font-size: 21px;
+	line-height: 25px;
+	top: 180px;
+	position: relative;
+	color: #777;
+	padding-bottom: 30px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: bold;
+font-family: 'Rajdhani', sans-serif;
+	color: var(--blue);
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+p {
+	font-size: 14px;
+	line-height: 20px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+
+#menu_titel {
+	
+	font-size: 20px;
+}
+
+
+
+#headerbox img {
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	background-position: center;
+	top: 200px;
+	padding: 0% 10% 0% 10%;
+
+}
+
+#headerbox {
+	width: 100%;
+	height: 120vh;
+    overflow: hidden;
+background: linear-gradient(180deg, rgba(63,209,231,1) 4%, rgba(0,0,0,1) 32%); 
+}
+
+
+button {
+	font-size: 18px;
+	color: #fff;
+	background-color: #2DAE7E;
+	width: 170px;
+	height: 40px;
+	border-radius: 20px;
+	font-family: 'Rajdhani', sans-serif;
+	margin-bottom: 10px;
+}
+
+button:hover {
+	background-color: rgba(45, 175, 125, 0.8);
+	
+}
+
+
+
+#udvalgte {
+	padding-bottom: 60px;
+	
+}
+
+#udvalgte h2{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 50px 0px 40px 0px;
+
+}
+
+#udvalgte p{
+	color: #fff;
+	text-align: justify;
+	padding: 100px 30px 50px 30px;
+
+}
+
+#udvalgte b{
+	font-size: 18px;
+
+}
+
+
+#udvalgte img {
+	float:left;
+	max-height: 80px;
+	width: auto;
+	padding-left: 50px;
+}
+
+
+	
+/* ---------- topbar styling ---------- */
+.topbar {
+  padding: 13.5px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.topbar h2 {
+  margin: 0;
+  font-weight: 300;
+}
+
+/* ---------- tabbar styling ---------- */
+.tabbar {
+  background-color: #028BFF;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+	padding-top: 112px;
+box-shadow: 1px 1px 30px #333;}
+
+/* Style the links inside the navigation bar */
+.tabbar a {
+  display: none;
+}
+
+/* ---------- page styling - from w3schools.com ---------- */
+.page {
+  display: none;
+  /*min heigh is screen heigh minus height of tab and top bar */
+  min-height: calc(100vh - 110px);
+  background: var(--light-grey);
+  animation: fadeIn 0.4s;
+  /* padding equals height of tabbar and topbar */
+  padding: 55px 0;
+}
+
+
+/* FOOTER */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+	background-color: #f1f1f4;
+	color: #333;
+}
+
+.column2 {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* ----- DESKTOP ----- */
+
+@media (min-width:1025px) {
+
+	.tabbar a {
+		width: 15%;
+	}
+	
+
+	
+#headerbox {
+	width: 100%;
+	height: 110vh;
+    overflow: hidden;
+	background: linear-gradient(50deg, rgba(63,209,231,1) 4%, rgba(0,0,0,1) 50%); 
+}
+	
+#headerbox img {
+	max-width: 650px;
+	float: right;
+	margin-top: -400px;
+	margin-right: 5%;
+
+
+}
+
+
+#headerbox h2 {
+		margin-left: 15%;
+	font-size: 40px;
+	margin-right: 43%;
+
+text-align: left;
+	padding-top: 15px;
+}
+
+#headerbox p {
+	text-align: left;
+	margin-right: 43%;
+
+}
+	
+.logo {
+  max-width: 160px;
+	filter: blur();
+	position: fixed;
+	top: -20px;
+	left: 10%;
+}
+	
+p {
+	margin-right: 15%;
+	margin-left: 15%;
+}
+	
+	#headerbox h1 {
+		font-size: 3em;
+		margin-right: 40%;
+	}
+	
+h1 {
+margin-left: 15%;
+font-size: 2em;
+  font-weight: 300;
+	font-family: 'Rajdhani', sans-serif;
+	text-align: left;
+	margin-top: 200px;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+font-family: 'Rajdhani', sans-serif;
+	padding-bottom: 20px;
+	
+}
+	
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+	
+#udvalgte img {
+	float:left;
+	max-height: 80px;
+	width: auto;
+	padding-left: 20.33%;
+}
+	
+	
+	
+	/* FOOTER */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+}
+
+@media screen and (min-width: 980px){
+            .rwd-break { 
+              display: none; }
+        }
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
